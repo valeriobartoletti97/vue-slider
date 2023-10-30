@@ -83,21 +83,3 @@ createApp({
         console.log(this.slides)
     },
 }).mount('#app')
-
-/* nextBtn.addEventListener('click', function(){
-  
-    if(activeIndex === images.length -1){
-      activeIndex = 0;
-    } else {
-      activeIndex += 1;
-    }
-    document.querySelector('.item.active').classList.remove('active');
-    document.getElementsByClassName('item')[activeIndex].classList.add('active');
-  });
-  
-  prevBtn.addEventListener('click', function(){
-    
-   
-    document.querySelector('.item.active').classList.remove('active');
-    document.getElementsByClassName('item')[activeIndex].classList.add('active');
-  }); */
