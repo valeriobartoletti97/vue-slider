@@ -77,6 +77,9 @@ createApp({
               } else {
                 this.activeCount += 1;
               }
+        },
+        currentThumb(index){
+            this.activeCount = index
         }
     },
     created() {
