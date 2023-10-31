@@ -61,6 +61,7 @@ createApp({
             }],
             activeCount: 0,
             classActive: 'active',
+            interval: null
         }
     },
     methods:{
@@ -80,9 +81,18 @@ createApp({
         },
         currentThumb(index){
             this.activeCount = index
+        },
+        startAutoplay(){
+            this.interval = setInterval(this.nextThumb,2000);
+        },
+        stopAutoplay(){
+            clearInterval(this.interval)
         }
     },
     created() {
         console.log(this.slides)
     },
+    mounted(){
+       this.startAutoplay()
+    }
 }).mount('#app')
